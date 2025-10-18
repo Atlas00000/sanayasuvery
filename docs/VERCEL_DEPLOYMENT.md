@@ -65,7 +65,7 @@ git push -u origin main
    
    | Name | Value |
    |------|-------|
-   | `RESEND_API_KEY` | `re_YMXCdmVT_54LbxSb2yXMhvesnASaY8y3E` |
+   | `RESEND_API_KEY` | `re_xxxxxxxxxxxxx` (use your actual key from Resend) |
 
    Select: ✅ Production ✅ Preview ✅ Development
 
@@ -123,7 +123,8 @@ Vercel automatically provides:
 
 ### Required:
 ```
-RESEND_API_KEY=re_YMXCdmVT_54LbxSb2yXMhvesnASaY8y3E
+RESEND_API_KEY=re_xxxxxxxxxxxxx
+# Get your actual key from: https://resend.com/api-keys
 ```
 
 ### Optional (Future):

@@ -66,7 +66,7 @@ Bundle Size: ~160 KB (Excellent! Industry standard: < 200 KB)
 
 | Variable | Value | Notes |
 |----------|-------|-------|
-| `RESEND_API_KEY` | `re_YMXCdmVT_54LbxSb2yXMhvesnASaY8y3E` | Add to Vercel settings |
+| `RESEND_API_KEY` | `re_xxxxxxxxxxxxx` | Get from Resend dashboard - Add to Vercel settings |
 
 **Location in Vercel:**
 Project Settings → Environment Variables → Add

@@ -27,7 +27,7 @@ export default function HomePage() {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="fixed right-8 top-8 z-50"
+        className="fixed right-4 top-4 z-50 sm:right-8 sm:top-8"
       >
         <CartButton />
       </motion.div>
@@ -75,7 +75,7 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="mb-8"
           >
-            <h1 className="font-serif text-6xl font-bold tracking-tight text-foreground sm:text-7xl lg:text-9xl">
+            <h1 className="font-serif text-5xl font-bold tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-9xl">
               <ShimmerText>Sanaya's Scents</ShimmerText>
             </h1>
             <motion.div
@@ -103,16 +103,16 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-10"
+            className="mb-10 px-2"
           >
-            <h2 className="text-balance font-serif text-5xl font-bold leading-tight text-foreground sm:text-6xl lg:text-7xl">
+            <h2 className="text-balance font-serif text-3xl font-bold leading-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
               Discover Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary">Perfect Scent</span>
             </h2>
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="text-pretty mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-muted-foreground sm:text-2xl"
+              className="text-pretty mx-auto mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground sm:mt-8 sm:text-xl md:text-2xl"
             >
               Answer a few quick questions and we'll help you find your perfect fragrance match. Your scent is your
               story, and we're here to help you tell it.
@@ -137,17 +137,18 @@ export default function HomePage() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.9 }}
+            className="w-full px-4"
           >
-            <Link href="/survey">
-              <MagneticButton className="glow-soft group relative overflow-hidden rounded-full bg-gradient-to-r from-primary via-[#b87f97] to-primary bg-size-200 bg-pos-0 px-16 py-6 text-xl font-bold text-primary-foreground shadow-2xl transition-all duration-500 hover:bg-pos-100 hover:shadow-primary/60 sm:text-2xl">
-                <span className="relative z-10 flex items-center gap-3">
-                  <Wand2 className="h-6 w-6" />
-                  Start Your Journey
+            <Link href="/survey" className="block w-full sm:inline-block sm:w-auto">
+              <MagneticButton className="glow-soft group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-primary via-[#b87f97] to-primary bg-size-200 bg-pos-0 px-8 py-5 text-lg font-bold text-white shadow-2xl transition-all duration-500 hover:bg-pos-100 hover:shadow-primary/60 sm:px-16 sm:py-6 sm:text-xl lg:text-2xl">
+                <span className="relative z-10 flex items-center justify-center gap-3 text-white">
+                  <Wand2 className="h-5 w-5 sm:h-6 sm:w-6" />
+                  <span className="whitespace-nowrap">Start Your Journey</span>
                   <motion.span
                     animate={{ x: [0, 8, 0] }}
                     transition={{ duration: 1.5, repeat: Infinity }}
                   >
-                    <ArrowRight className="h-6 w-6" />
+                    <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6" />
                   </motion.span>
                 </span>
                 <motion.div
